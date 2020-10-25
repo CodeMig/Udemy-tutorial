@@ -1,0 +1,268 @@
+h1 {
+    text-align: center;
+    color: blue; 
+    text-shadow: 5px 5px 6px indigo;
+}
+
+.info {
+    color: blueviolet; }
+
+#italic{
+    color: burlywood; }
+
+.container { 
+    border: 5px solid coral; 
+    margin: 20px 1400px 20px 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: cyan;
+    text-align: center;
+}
+
+a {
+    text-decoration-line: none; }
+
+nav ul {
+    list-style: none; }
+
+nav li {
+    display: inline-block;
+    padding: 20px;
+}    
+
+.nav-wrapper{
+    background-color: rgb(37, 37, 145);
+}
+
+.box {
+    display: inline-block;
+    background-color: cornflowerblue;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 40%;
+    text-align: center;
+}
+.fire-img {
+    border-radius: 35%;
+    height: 150px;
+    box-shadow: 10px 20px 10px 10px rgb(41, 38, 38);
+}
+
+#descrip {
+    margin-left: 125px; }
+    
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid lawngreen;
+    margin-right: 1450px;
+    justify-content: space-around;
+}
+
+@keyframes fadeMe {
+    0% {
+        opacity: 1; }
+    100% {
+        opacity: 0; }
+}
+
+
+#box1 {
+    animation-name: fadeMe;
+    animation-duration: 8s ;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+0% {transform: rotate(0deg) ; }
+20% {transform: rotate(90deg) ; }
+50% {transform: rotate(180deg) ; }
+100% {transform: rotate(360deg) ; }
+}
+
+#box2 {
+    animation-name: rotate;
+    animation-duration: 6s ;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    border-radius: 30%;
+    background-image: radial-gradient(circle, red, orange, yellow, green, blue, indigo, violet);
+}
+
+@keyframes getBig {
+    0% {transform: scale(1);}
+    30% {transform: scale(2);}
+    75% {transform: scale(.5);}
+    100% {transform: scale(1);}
+}
+
+#box3 {
+    animation: getBig infinite 8s linear;
+    border-radius: 50%;
+    background: paleturquoise;
+    box-shadow: 5px 5px 5px 5px rgb(3, 11, 27)inset;
+}
+
+@keyframes rainBow {
+    0% {background-color:red;}
+    15% {background-color:orange;}
+    30% {background-color:yellow;}
+    45% {background-color:green;}
+    60% {background-color:blue;}
+    75% {background-color:indigo;}
+    90% {background-color:violet;}
+    100% {background-color: rgb(255, 0, 85);}
+}
+
+#box4 {
+    animation: rainBow infinite 4s ease-in-out;
+}
+
+@keyframes iltmm {
+    0% {left: 0px; bottom: 0px; }
+    25% {left: 100px; bottom: 0px; }
+    50% {left: 100px; bottom: 150px; }
+    75% {left: 0px; bottom: 200px; }
+    100% {left: 0px; bottom: 0px; }
+    0% {
+        opacity: 1; }
+    80% {
+        opacity: 0; }
+    100% {
+        opacity: 1; }    
+}
+
+#box5 {
+    animation: iltmm infinite 6s;
+    position: relative;
+    background: blue;
+}
+
+@keyframes magic {
+    0% {background-color:red;}
+    15% {background-color:orange;}
+    30% {background-color:yellow;}
+    45% {background-color:green;}
+    60% {background-color:blue;}
+    75% {background-color:indigo;}
+    90% {background-color:violet;}
+    100% {background-color: rgb(255, 0, 85);}
+    0% {opacity: 1; }
+    25% {opacity: 0.5; }
+    50% {opacity: 1; }  
+    75% {opacity: 0.7; }
+    100% {opacity: 1; }
+    0% {left: 0px; bottom: 0px; }
+    25% {right: 200px; bottom: 0px; }
+    50% {right: 100px; bottom: 150px; }
+    75% {right: 0px; bottom: 200px; }
+    100% {left: 0px; bottom: 0px; }
+    0% {transform: scale(1);}
+    30% {transform: scale(1.5);}
+    75% {transform: scale(1);}
+    90% {transform: scale(.5);}
+    100% {transform: scale(.2);}
+    0% {transform: rotate(0deg) ; }
+    20% {transform: rotate(90deg) ; }
+    50% {transform: rotate(180deg) ; }
+    100% {transform: rotate(360deg) ; }
+}
+
+#box6 {
+    animation: magic infinite 10s;
+    position: relative;
+}
+
+html {
+    background-image: linear-gradient(rgb(138, 205, 228), lightyellow, rgb(138, 205, 228))
+}
+
+.flex-box {
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    margin: 50px;
+}
+
+.input-field {
+    margin: 50px;
+}
+
+
+form input, textarea, button {
+    display: block;
+    margin: 28px;
+}
+
+.wrapper {
+    display: grid;
+grid-gap: 10px;
+    grid-template-columns: repeat(5, [col] 175px ) ;
+    grid-template-rows: repeat(3, [row] auto  );
+    background-color: #fff;
+    color: #444;
+    margin: 25px;
+    margin-right: 2000px;
+}
+
+.Box {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+    z-index:10;
+}
+
+.a {
+    grid-column: col / span  2;
+    grid-row: row ;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(cornflowerblue, pink, paleturquoise, yellowgreen);
+}
+.b {
+    grid-column: col 3 / span  2 ;
+    grid-row: row ;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(rgb(11, 211, 238), rgb(209, 106, 123), rgb(21, 255, 0), rgb(60, 39, 65));
+}
+.c {
+    grid-column: col / span 4;
+    grid-row: row 2 ;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(cornflowerblue, pink, paleturquoise, yellowgreen);
+}
+.d {
+    grid-column: col 1 / span  2 ;
+    grid-row: row 3 ;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(paleturquoise, red, orange, yellowgreen);
+}
+
+.e {
+    grid-column: col 3 / span  2;
+    grid-row: row 3;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(pink, blue, green, yellowgreen);
+}
+
+.f {
+    grid-column: col 2 / span 3;
+    grid-row: row 2  ;
+    background-color: rgba(0, 26, 58, 0.5);
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(, pink, paleturquoise, yellowgreen);
+}
