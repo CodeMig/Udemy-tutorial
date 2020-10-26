@@ -264,5 +264,5 @@ grid-gap: 10px;
     z-index: 20;
     display: flex;
     justify-content: center;
-    background-image: linear-gradient(, pink, paleturquoise, yellowgreen);
+    background-image: linear-gradient( pink, paleturquoise, yellowgreen);
 }
